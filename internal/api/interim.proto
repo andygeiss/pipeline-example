@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option go_package = "internal/api";
+
+message Interim {
+  repeated double SepalLength = 1 [packed = true];
+  repeated double SepalWidth = 2 [packed = true];
+  repeated double PetalLength = 3 [packed = true];
+  repeated double PetalWidth = 4 [packed = true];
+  repeated string Species = 5;
+}

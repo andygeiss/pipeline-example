@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option go_package = "internal/api";
+
+message Processed {
+  uint64 Count = 1;
+  repeated uint32 Species = 2 [packed = true];
+  repeated uint32 SepalLength = 3 [packed = true];
+  repeated uint32 SepalWidth = 4 [packed = true];
+}
